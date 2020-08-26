@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+    <header>
+        <h1>{{number_type }} numbers from 1 to {{ number }}</h1>
+    </header>
+    <body>
+        {% if numbers %}
+        {% for num in numbers %}
+            <p> {{ num }} </p>
+        {% endfor %}
+        {% endif %}
+    </body>
+</html>
